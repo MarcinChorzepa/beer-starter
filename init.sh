@@ -14,3 +14,21 @@ do
   fi
 done
 git submodule update --init --recursive
+
+#fetching repos from submodule
+for repo in "${EMOBLILITY_GIT[@]}"
+do
+  NAME=$repo
+  NAME=${NAME#*/}
+  NAME=${NAME%.*}
+  if [ -d $NAME ]
+  echo "fetching repo $NAME"
+  cd $NAME && \
+      git fetch && \
+      git fetch --tags && \
+      git checkout main
+  git add $NAME
+  git commit -m 'Update the submodule to the "my-tag" version' my-submodule
+
+  fi
+done
