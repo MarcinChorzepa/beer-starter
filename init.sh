@@ -22,13 +22,15 @@ do
   NAME=${NAME#*/}
   NAME=${NAME%.*}
   if [ -d $NAME ]
+  then
   echo "fetching repo $NAME"
   cd $NAME && \
       git fetch && \
       git fetch --tags && \
-      git checkout main
+      git checkout master
+  cd ..
   git add $NAME
-  git commit -m 'Update the submodule to the "my-tag" version' my-submodule
+  git commit -m 'Update the submodule to the "my-tag" version' $NAME
 
   fi
 done
