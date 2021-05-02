@@ -1,2 +1,5 @@
 
 /.idea/
+.gitmodules
+/mssc-beer-inventory-service/
+/mssc-brewery-client/
