@@ -30,7 +30,7 @@ do
       git checkout master
   cd ..
   git add $NAME
-  git commit -m 'Update the submodule to the "my-tag" version' $NAME
+  git commit -m 'Update the submodule to the master version' $NAME
 
   fi
 done
