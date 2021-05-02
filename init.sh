@@ -24,13 +24,16 @@ do
   if [ -d $NAME ]
   then
   echo "fetching repo $NAME"
-  cd $NAME && \
-      git fetch && \
-      git fetch --tags && \
-      git checkout master
-  cd ..
-  git add $NAME
-  git commit -m 'Update the submodule to the master version' $NAME
-
+    if cd $NAME && \
+        git fetch && \
+        git fetch --tags && \
+        git checkout $1 >/dev/null; then
+        cd ..
+        git add $NAME
+        git commit -m "Update the submodule to the $1 version" $NAME
+    else
+        echo "Branch or project not found"
+        cd ..
+    fi
   fi
 done
