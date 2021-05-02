@@ -10,7 +10,7 @@ do
     echo "repository $NAME exists. (skipping)"
   else
     	echo "clonning repo $repo"
-    	git clone $repo $HOME_DIR/$NAME
+    	git submodule add $repo
   fi
 #	GIT_IGNORE=$GIT_IGNORE"/"$NAME"\n"
 

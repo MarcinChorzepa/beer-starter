@@ -1,0 +1,6 @@
+[submodule "mssc-brewery-client"]
+	path = mssc-brewery-client
+	url = git@github.com:MarcinChorzepa/mssc-brewery-client.git
+[submodule "mssc-beer-inventory-service"]
+	path = mssc-beer-inventory-service
+	url = git@github.com:MarcinChorzepa/mssc-beer-inventory-service.git
