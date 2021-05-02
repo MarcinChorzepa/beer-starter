@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ede222f-e4dd-4038-9ef3-8407a33028c5" name="Default Changelist" comment="sdfsdaf">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ryZhxRlWMdM1wtq1bZdMNKx888" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619950412369</updated>
       <workItem from="1619950416632" duration="1233000" />
+      <workItem from="1619951755010" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdaf">
       <created>1619951355755</created>
