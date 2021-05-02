@@ -5,15 +5,15 @@ do
   NAME=$repo
   NAME=${NAME#*/}
   NAME=${NAME%.*}
-  if [ -d $HOME_DIR/$NAME ]
+  if [ -d $NAME ]
   then
     echo "repository $NAME exists. (skipping)"
   else
     	echo "clonning repo $repo"
     	git submodule add $repo
   fi
-#	GIT_IGNORE=$GIT_IGNORE"/"$NAME"\n"
 
 done
+git submodule init
 #echo $GIT_IGNORE
 #echo -e "$GIT_IGNORE">.gitignore
