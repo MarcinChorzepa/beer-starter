@@ -10,12 +10,12 @@ do
 #    echo "repository $NAME exists. (skipping)"
 #  else
     	echo "clonning repo $repo"
-    	git submodule add $repo
+    	git clone --recurse-submodules $repo
 #  fi
 GIT_IGNORE=$GIT_IGNORE"/"$NAME"\n"
 done
-git submodule update
-git submodule init
+#git submodule update
+#git submodule init
 
 #echo $GIT_IGNORE
 echo -e "$GIT_IGNORE">.gitignore
