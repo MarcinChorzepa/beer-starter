@@ -5,18 +5,12 @@ do
   NAME=$repo
   NAME=${NAME#*/}
   NAME=${NAME%.*}
-#  if [ -d $NAME ]
-#  then
-#    echo "repository $NAME exists. (skipping)"
-#  else
+  if [ -d $NAME ]
+  then
+    echo "repository $NAME exists. (skipping)"
+  else
     	echo "clonning repo $repo"
     	git submodule add $repo $NAME
-    	git clone --recurse-submodules $repo
-#  fi
-GIT_IGNORE=$GIT_IGNORE"/"$NAME"\n"
+  fi
 done
-#git submodule update
-#git submodule init
-
-#echo $GIT_IGNORE
-#echo -e "$GIT_IGNORE">.gitignore
+git submodule update --init --recursive
