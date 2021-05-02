@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+BRANCH=${1:-master}
+if
 source config/config.sh
 for repo in "${EMOBLILITY_GIT[@]}"
 do
@@ -27,10 +29,10 @@ do
     if cd $NAME && \
         git fetch && \
         git fetch --tags && \
-        git checkout $1 >/dev/null; then
+        git checkout $BRANCH >/dev/null; then
         cd ..
         git add $NAME
-        git commit -m "Update the submodule to the $1 version" $NAME
+        git commit -m "Update the submodule to the $BRANCH version" $NAME
     else
         echo "Branch or project not found"
         cd ..
