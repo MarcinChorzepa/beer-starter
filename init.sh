@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-BRANCH=${1:-main}
+BRANCH=${1:-master}
 source config/config.sh
 
 echo $BRANCH
@@ -32,6 +32,7 @@ do
         git fetch --tags && \
         git checkout $BRANCH>/dev/null;
     then
+        git pull
         cd ..
         git add $NAME
         git commit -m "Update the submodule to the $BRANCH version" $NAME

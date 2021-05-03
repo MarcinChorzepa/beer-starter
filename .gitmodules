@@ -4,3 +4,30 @@
 [submodule "mssc-beer-inventory-service"]
 	path = mssc-beer-inventory-service
 	url = git@github.com:MarcinChorzepa/mssc-beer-inventory-service.git
+[submodule "mssc-brewery"]
+	path = mssc-brewery
+	url = git@github.com:MarcinChorzepa/mssc-brewery.git
+[submodule "mssc-config-server"]
+	path = mssc-config-server
+	url = git@github.com:MarcinChorzepa/mssc-config-server.git
+[submodule "mssc-brewery-eureka"]
+	path = mssc-brewery-eureka
+	url = git@github.com:MarcinChorzepa/mssc-brewery-eureka.git
+[submodule "mssc-brewery-gateway"]
+	path = mssc-brewery-gateway
+	url = git@github.com:MarcinChorzepa/mssc-brewery-gateway.git
+[submodule "mssc-inventory-failover"]
+	path = mssc-inventory-failover
+	url = git@github.com:MarcinChorzepa/mssc-inventory-failover.git
+[submodule "mssc-beer-order-service"]
+	path = mssc-beer-order-service
+	url = git@github.com:MarcinChorzepa/mssc-beer-order-service.git
+[submodule "mssc-beer-service"]
+	path = mssc-beer-service
+	url = git@github.com:MarcinChorzepa/mssc-beer-service.git
+[submodule "mssc-brewery-config-repo"]
+	path = mssc-brewery-config-repo
+	url = git@github.com:MarcinChorzepa/mssc-brewery-config-repo.git
+[submodule "mssc-brewery-bom"]
+	path = mssc-brewery-bom
+	url = git@github.com:MarcinChorzepa/mssc-brewery-bom.git
