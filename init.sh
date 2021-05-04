@@ -14,6 +14,7 @@ do
   else
     	echo "clonning repo $repo"
     	git submodule add $repo $NAME
+    	git config submodule.$NAME.active true
   fi
 done
 git submodule update --init --recursive
